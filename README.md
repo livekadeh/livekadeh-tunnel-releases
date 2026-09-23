@@ -8,22 +8,22 @@
 
 ---
 
-## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.1)
+## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.2)
 
 | سیستم‌عامل (Platform) | معماری (Architecture) | لینک دانلود مستقیم (Direct Download) | توضیحات |
 | :--- | :--- | :--- | :--- |
-| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK (v1.9.1)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.1/livekadeh-tunnel-v1.9.1.apk) | همراه با ویدجت صفحه اصلی، اسپیدتست و ریکانکت خودکار |
-| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج Zip کامل](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.1/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI و درایور کرنل Wintun |
-| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.1/livekadeh_tunnel.exe) | نیازمند قرارگیری wintun.dll در کنار فایل |
-| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.1/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
-| **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.1/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
-| **macOS** | `Intel (x86_64)` | [🍏 دانلود نسخه مک Intel](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.1/livekadeh_tunnel-macos-x86_64.tar.gz) | سازگار با پردازنده‌های اینتل |
+| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK (v1.9.2)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh-tunnel-v1.9.2.apk) | همراه با ویدجت صفحه اصلی، اسپیدتست و ریکانکت خودکار |
+| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج Zip کامل](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI و درایور کرنل Wintun |
+| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel.exe) | نیازمند قرارگیری wintun.dll در کنار فایل |
+| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
+| **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
+| **macOS** | `Intel (x86_64)` | [🍏 دانلود نسخه مک Intel](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-x86_64.tar.gz) | سازگار با پردازنده‌های اینتل |
 
 ---
 
 ## 📱 راهنمای استفاده از نسخه اندروید (Android Quick Start)
 
-1. فایل `livekadeh-tunnel-v1.9.1.apk` را دانلود و نصب کنید.
+1. فایل `livekadeh-tunnel-v1.9.2.apk` را دانلود و نصب کنید.
 2. دسترسی‌های درخواستی (مجوز VPN Service و Notifications) را تأیید کنید.
 3. **افزودن کانفیگ**:
    - کلیک بر روی آیکون **QR Code** در گوشه صفحه برای اسکن کد ارائه شده توسط ادمین، یا
