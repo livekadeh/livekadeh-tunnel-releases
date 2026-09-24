@@ -18,6 +18,7 @@
 | **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
 | **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
 | **macOS** | `Intel (x86_64)` | [🍏 دانلود نسخه مک Intel](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-x86_64.tar.gz) | سازگار با پردازنده‌های اینتل |
+| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.2)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ و سایدلود |
 
 ---
 
