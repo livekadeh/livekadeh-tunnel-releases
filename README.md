@@ -17,10 +17,24 @@
 | **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel.exe) | نیازمند قرارگیری wintun.dll در کنار فایل |
 | **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
 | **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
-| **macOS** | `Intel (x86_64)` | [🍏 دانلود نسخه مک Intel](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-x86_64.tar.gz) | سازگار با پردازنده‌های اینتل |
-| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.2)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ و سایدلود |
+| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.2)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ، Sideloadly و AltStore |
+| **iOS Simulator** | `arm64 / x86_64` | [📦 دانلود پکیج شبیه‌ساز (App Bundle)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/LivekadehTunnel.app.zip) | تست مجازی در Appetize.io یا شبیه‌ساز مک |
 
 ---
+
+## 🍏 راهنمای استفاده از نسخه iOS (iPhone & iPad Quick Start)
+
+1. **ثبت و امضا (Signing & Installation)**:
+   - فایل `LivekadehTunnel.ipa` را دانلود نموده و جهت امضای شرکتی یا ادهاک در سامانه‌هایی نظیر **اناردونی (Anardoni)**، **سیب‌اپ** یا **آی‌اپس** ثبت نمایید.
+   - همچنین برای استفاده رایگان با اپل‌آیدی شخصی می‌توانید از برنامه‌های **Sideloadly** یا **AltStore** بر روی ویندوز یا مک استفاده کنید.
+2. **افزودن سریع کانفیگ با لینک**:
+   - در پنل مدیریت ادمین روی دکمه **کپی لینک (livekadeh://)** کلیک کنید.
+   - در اپلیکیشن، لینک کپی‌شده را در بخش پروفایل وارد نمایید تا کلیه مشخصات سرور، کلید و پورت آنی ست شوند.
+3. **اسکن QR Code**:
+   - اسکن مستقیم از طریق دوربین گوشی یا انتخاب عکس/اسکرین‌شات کیوآرکد از آلبوم تصاویر.
+4. **مدیریت پروفایل‌ها (Multi-Profile)**:
+   - تعریف چندین سرور مجزا و انتخاب سریع از صفحه اصلی بدون نیاز به ورود مجدد اطلاعات.
+
 
 ## 📱 راهنمای استفاده از نسخه اندروید (Android Quick Start)
 
