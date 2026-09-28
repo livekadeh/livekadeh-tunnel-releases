@@ -128,7 +128,7 @@ http://<SERVER_IP>:8444
     "memPercent": 25,
     "cpuCount": 4,
     "hostname": "livekadeh-core-1",
-    "serverIp": "194.31.108.53",
+    "serverIp": "YOUR_SERVER_IP",
     "serverPort": 8443,
     "version": "1.9.1"
   },
@@ -157,7 +157,7 @@ http://<SERVER_IP>:8444
       "online": 1,
       "type": "TCP",
       "num_conns": 8,
-      "remote_ip": "5.120.35.42:54321",
+      "remote_ip": "203.0.113.42:54321",
       "country": "Iran",
       "country_code": "IR",
       "country_emoji": "🇮🇷",
@@ -197,7 +197,7 @@ http://<SERVER_IP>:8444
     "assigned_ip": 11,
     "name": "Reza",
     "key_hex": "e4f8a1...",
-    "configUrl": "livekadeh://e4f8a1...@194.31.108.53:8443?name=Reza"
+    "configUrl": "livekadeh://e4f8a1...@YOUR_SERVER_IP:8443?name=Reza"
   }
 }
 ```
@@ -236,8 +236,8 @@ http://<SERVER_IP>:8444
 ```json
 {
   "status": "ok",
-  "configUrl": "livekadeh://e4f8a1...@194.31.108.53:8443?name=Reza",
-  "serverIp": "194.31.108.53",
+  "configUrl": "livekadeh://e4f8a1...@YOUR_SERVER_IP:8443?name=Reza",
+  "serverIp": "YOUR_SERVER_IP",
   "serverPort": 8443,
   "assignedInternalIp": "10.10.10.11",
   "keyHex": "e4f8a1b2c3d4..."
