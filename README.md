@@ -197,7 +197,7 @@ http://<SERVER_IP>:8444
     "assigned_ip": 11,
     "name": "Reza",
     "key_hex": "e4f8a1...",
-    "configUrl": "livekadeh://e4f8a1...@194.81.108.53:8443?name=Reza"
+    "configUrl": "livekadeh://e4f8a1...@194.31.108.53:8443?name=Reza"
   }
 }
 ```
@@ -236,8 +236,8 @@ http://<SERVER_IP>:8444
 ```json
 {
   "status": "ok",
-  "configUrl": "livekadeh://e4f8a1...@194.81.108.53:8443?name=Reza",
-  "serverIp": "194.81.108.53",
+  "configUrl": "livekadeh://e4f8a1...@194.31.108.53:8443?name=Reza",
+  "serverIp": "194.31.108.53",
   "serverPort": 8443,
   "assignedInternalIp": "10.10.10.11",
   "keyHex": "e4f8a1b2c3d4..."
