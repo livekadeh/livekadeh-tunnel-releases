@@ -4,7 +4,7 @@
 [![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20Windows%20%7C%20Linux%20%7C%20macOS-blue)](#-client-downloads)
 [![License](https://img.shields.io/badge/License-Proprietary-red)](#)
 
-سامانه تانلینگ و وی‌پی‌ان اختصاصی لایوکده (Livekadeh Tunnel) با پروتکل رمزنگاری Zero-DPI و معماری چندمسیره (Multipath TCP & UDP) برای دور زدن فیلترینگ شدید، کاهش پینگ و پایدارسازی اینترنت.
+سامانه تانلینگ و وی‌پی‌ان اختصاصی لایوکده (Livekadeh Tunnel) با پروتکل رمزنگاری Zero-DPI و معماری چندمسیره (Multipath TCP & UDP) ، کاهش پینگ و پایدارسازی اینترنت.
 
 ---
 
