@@ -8,17 +8,17 @@
 
 ---
 
-## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.2)
+## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.9)
 
 | سیستم‌عامل (Platform) | معماری (Architecture) | لینک دانلود مستقیم (Direct Download) | توضیحات |
 | :--- | :--- | :--- | :--- |
-| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK (v1.9.2)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh-tunnel-v1.9.2.apk) | همراه با ویدجت صفحه اصلی، اسپیدتست و ریکانکت خودکار |
-| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج Zip کامل](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI و درایور کرنل Wintun |
-| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel.exe) | نیازمند قرارگیری wintun.dll در کنار فایل |
-| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
-| **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
-| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.2)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ، Sideloadly و AltStore |
-| **iOS Simulator** | `arm64 / x86_64` | [📦 دانلود پکیج شبیه‌ساز (App Bundle)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.2/LivekadehTunnel.app.zip) | تست مجازی در Appetize.io یا شبیه‌ساز مک |
+| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK (v1.9.9)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-android.apk) | همراه با ویدجت صفحه اصلی، اسپیدتست و ریکانکت خودکار |
+| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج Zip کامل](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI و درایور کرنل Wintun |
+| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel.exe) | نیازمند قرارگیری wintun.dll در کنار فایل |
+| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
+| **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
+| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.9)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ، Sideloadly و AltStore |
+| **iOS Simulator** | `arm64 / x86_64` | [📦 دانلود پکیج شبیه‌ساز (App Bundle)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/LivekadehTunnel.app.zip) | تست مجازی در Appetize.io یا شبیه‌ساز مک |
 
 ---
 
@@ -38,7 +38,7 @@
 
 ## 📱 راهنمای استفاده از نسخه اندروید (Android Quick Start)
 
-1. فایل `livekadeh-tunnel-v1.9.2.apk` را دانلود و نصب کنید.
+1. فایل `livekadeh_tunnel-android.apk` را دانلود و نصب کنید.
 2. دسترسی‌های درخواستی (مجوز VPN Service و Notifications) را تأیید کنید.
 3. **افزودن کانفیگ**:
    - کلیک بر روی آیکون **QR Code** در گوشه صفحه برای اسکن کد ارائه شده توسط ادمین، یا
@@ -252,6 +252,31 @@ http://<SERVER_IP>:8444
 * **متد:** `GET` / `POST`
 * **مسیر:** `/api/settings`
 * **توضیحات:** مشاهده و تنظیم آدرس عمومی سرور و پورت اتصال تانل جهت درج دقیق در بارکد QR و لینک‌های اتصال.
+
+
+#### ۳.۹. استعلام بلادرنگ وضعیت کلاینت و ترافیک (Client Account Status)
+* **متد:** `GET`
+* **مسیر:** `/api/client/status?key=CLIENT_KEY`
+* **توضیحات:** این اندپوینت نیازی به لاگین ادمین ندارد و توسط اپلیکیشن‌های کلاینت (نظیر اندروید) برای بررسی حجم باقیمانده، تاریخ انقضا و وضعیت اکانت فراخوانی می‌شود.
+* **نمونه پاسخ:**
+```json
+{
+  "status": "ok",
+  "user": {
+    "name": "Reza",
+    "assigned_ip_str": "100.96.0.2",
+    "enabled": true,
+    "max_bytes": 53687091200,
+    "used_bytes": 10485760000,
+    "remaining_bytes": 43201331200,
+    "expires_at": 1795000000,
+    "remaining_seconds": 2592000,
+    "is_expired": false,
+    "is_quota_exceeded": false
+  }
+}
+```
+
 
 ---
 
