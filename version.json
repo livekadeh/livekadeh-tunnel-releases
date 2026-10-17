@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.22",
-    "version_code": 22,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.22/LivekadehTunnel.apk",
-    "changelog": "سیستم تفکیک هوشمند آپدیت و ارتقای پایداری اتصال اندروید"
+    "version": "1.9.23",
+    "version_code": 23,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.23/LivekadehTunnel.apk",
+    "changelog": "ارتقای چشمگیر سرعت دریافت IP و کشور با اولویت ipwho.is"
   },
   "windows": {
     "version": "1.9.21",
