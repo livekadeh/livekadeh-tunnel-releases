@@ -1,0 +1,24 @@
+{
+  "android": {
+    "version": "1.9.10",
+    "version_code": 20,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.apk",
+    "changelog": "پایدارسازی هسته و بهینه‌سازی مصرف باتری"
+  },
+  "windows": {
+    "version": "1.9.21",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/livekadeh_tunnel.exe",
+    "changelog": "ارتقای درایور Wintun و بهبود اتصال مستقیم"
+  },
+  "ios": {
+    "version": "1.9.10",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa",
+    "changelog": "نسخه پایدار iOS"
+  },
+  "macos": {
+    "version": "1.9.21",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg",
+    "changelog": "پکیج یونیورسال مک"
+  }
+}
+
