@@ -6,9 +6,9 @@
     "changelog": "ارتقای چشمگیر سرعت دریافت IP و کشور با اولویت ipwho.is"
   },
   "windows": {
-    "version": "1.9.21",
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/livekadeh_tunnel.exe",
-    "changelog": "ارتقای درایور Wintun و بهبود اتصال مستقیم"
+    "version": "1.9.24",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.24/livekadeh_tunnel.exe",
+    "changelog": "طراحی مدرن مشابه اندروید با منوی سه نقطه‌ای، نمایش IP و کشور خروجی تانل و بهبود استارتاپ ویندوز"
   },
   "ios": {
     "version": "1.9.10",
