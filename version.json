@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.10",
-    "version_code": 20,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.apk",
-    "changelog": "پایدارسازی هسته و بهینه‌سازی مصرف باتری"
+    "version": "1.9.22",
+    "version_code": 22,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.22/LivekadehTunnel.apk",
+    "changelog": "سیستم تفکیک هوشمند آپدیت و ارتقای پایداری اتصال اندروید"
   },
   "windows": {
     "version": "1.9.21",
@@ -21,4 +21,3 @@
     "changelog": "پکیج یونیورسال مک"
   }
 }
-
