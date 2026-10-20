@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.23",
-    "version_code": 23,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.23/LivekadehTunnel.apk",
-    "changelog": "ارتقای چشمگیر سرعت دریافت IP و کشور با اولویت ipwho.is"
+    "version": "1.9.28",
+    "version_code": 28,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.28/LivekadehTunnel.apk",
+    "changelog": "تنظیم پیش‌فرض MTU روی 1280 برای سازگاری کامل با اینترنت موبایل و جلوگیری از تکه‌تکه شدن بسته‌ها"
   },
   "windows": {
     "version": "1.9.27",
