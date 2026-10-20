@@ -6,9 +6,9 @@
     "changelog": "ارتقای چشمگیر سرعت دریافت IP و کشور با اولویت ipwho.is"
   },
   "windows": {
-    "version": "1.9.26",
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.26/livekadeh_tunnel.exe",
-    "changelog": "اسپیدتست دو حالته (با تانل و بدون تانل) به همراه گیج آنالوگ و اشتراک تصویر، نمایش گرافیکی پرچم کشورها، تفکیک GeoIP در حالت Per-App و آیکون پنجره‌ها"
+    "version": "1.9.27",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.27/livekadeh_tunnel.exe",
+    "changelog": "تنظیمات پیشرفته شبکه شامل تغییر MTU و سرورهای DNS اختصاصی در منوی برنامه"
   },
   "ios": {
     "version": "1.9.10",
