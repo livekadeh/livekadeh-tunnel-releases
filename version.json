@@ -6,9 +6,9 @@
     "changelog": "تنظیم پیش‌فرض MTU روی 1280 برای سازگاری کامل با اینترنت موبایل و جلوگیری از تکه‌تکه شدن بسته‌ها"
   },
   "windows": {
-    "version": "1.9.30",
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.30/livekadeh_tunnel.exe",
-    "changelog": "پشتیبانی بومی از پروتکل QUIC (UDP 443) و کوئری‌های DNS در حالت Per-App بدون قطعی کروم"
+    "version": "1.9.31",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.31/livekadeh_tunnel.exe",
+    "changelog": "افزودن لاگ‌های تشخیصی برای رهگیری بسته‌های TCP در حالت Pre-App ویندوز"
   },
   "ios": {
     "version": "1.9.10",
