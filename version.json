@@ -6,9 +6,9 @@
     "changelog": "تنظیم پیش‌فرض MTU روی 1280 برای سازگاری کامل با اینترنت موبایل و جلوگیری از تکه‌تکه شدن بسته‌ها"
   },
   "windows": {
-    "version": "1.9.33",
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.33/livekadeh_tunnel.exe",
-    "changelog": "انتخاب جدیدترین نسخه از mirrorهای فعال به‌روزرسانی ویندوز"
+    "version": "1.9.34",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.34/livekadeh_tunnel.exe",
+    "changelog": "ثبت درست داده‌های TCP در لاگ تشخیصی Pre-App و جلوگیری از ادغام هم‌زمان خطوط لاگ"
   },
   "ios": {
     "version": "1.9.10",
