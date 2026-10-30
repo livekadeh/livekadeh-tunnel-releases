@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.28",
-    "version_code": 28,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.28/LivekadehTunnel.apk",
-    "changelog": "تنظیم پیش‌فرض MTU روی 1280 برای سازگاری کامل با اینترنت موبایل و جلوگیری از تکه‌تکه شدن بسته‌ها"
+    "version": "1.9.37",
+    "version_code": 29,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.37/LivekadehTunnel.apk",
+    "changelog": "افزودن قابلیت اشتراک اینترنت تانل روی هات‌اسپات با SNI Proxy و سرور DNS محلی، دسترسی سریع به DNSهای ضدتحریم ایرانی (شکن، الکترو، رادار، ۴۰۳، بگذر) و یکپارچه‌سازی منوی تنظیمات پیشرفته"
   },
   "windows": {
     "version": "1.9.36",
