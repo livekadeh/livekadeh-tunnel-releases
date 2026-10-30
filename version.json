@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.38",
-    "version_code": 30,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.38/LivekadehTunnel.apk",
-    "changelog": "تفکیک تنظیمات پیشرفته به زیرمنوهای اختصاصی، نمایش لیست دیوایس‌های متصل به هات‌اسپات، پشتیبانی از Root NAT و پروکسی محلی ۸۰۸۰"
+    "version": "1.9.39",
+    "version_code": 31,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.39/LivekadehTunnel.apk",
+    "changelog": "رفع کامل باگ مسیریابی هات‌اسپات و شبکه محلی (LAN Bypass)، تشخیص دقیق IP هات‌اسپات اندروید ۱۱ به بالا، پشتیبانی هم‌زمان پروکسی HTTP/HTTPS و SOCKS5 روی پورت ۸۰۸۰ و ۱۰۸۰ بدون روت، و بهینه‌سازی Root NAT"
   },
   "windows": {
     "version": "1.9.36",
