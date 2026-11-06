@@ -8,17 +8,19 @@
 
 ---
 
-## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.9)
+## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.40)
 
 | سیستم‌عامل (Platform) | معماری (Architecture) | لینک دانلود مستقیم (Direct Download) | توضیحات |
 | :--- | :--- | :--- | :--- |
-| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK (v1.9.9)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-android.apk) | همراه با ویدجت صفحه اصلی، اسپیدتست و ریکانکت خودکار |
-| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج Zip کامل](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI و درایور کرنل Wintun |
-| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel.exe) | نیازمند قرارگیری wintun.dll در کنار فایل |
-| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
-| **macOS** | `Apple Silicon (M1/M2/M3/M4)` | [🍎 دانلود نسخه مک ARM64](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
-| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.9)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ، Sideloadly و AltStore |
-| **iOS Simulator** | `arm64 / x86_64` | [📦 دانلود پکیج شبیه‌ساز (App Bundle)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.9/LivekadehTunnel.app.zip) | تست مجازی در Appetize.io یا شبیه‌ساز مک |
+| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج کامل Zip (v1.9.40)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI، اشتراک هات‌اسپات، Wintun و WinDivert |
+| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe (v1.9.40)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel.exe) | فایل اجرایی با رابط گرافیکی (نیازمند wintun.dll) |
+| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK رسمی (v1.9.39)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.39/LivekadehTunnel.apk) | همراه با اشتراک تانل روی هات‌اسپات (پروکسی HTTP/SOCKS5)، ویدجت و اسپیدتست |
+| **macOS** | `Universal (Apple Silicon & Intel)` | [🍎 دانلود پکیج DMG مک (v1.9.21)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg) | نصاب دیسک ایمیج نیتیو بدون نیاز به ترمینال |
+| **macOS CLI** | `Apple Silicon (M1/M2/M3/M4)` | [🍏 دانلود نسخه مک ARM64 (v1.9.10)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
+| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.10)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ، Sideloadly و AltStore |
+| **iOS Simulator** | `arm64 / x86_64` | [📦 دانلود پکیج شبیه‌ساز (App Bundle)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.app.zip) | تست مجازی در Appetize.io یا شبیه‌ساز مک |
+| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI (v1.9.10)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
+| **MikroTik CHR** | `RouterOS v7 Container` | [📦 دانلود ایمیج کانتینر میکروتیک (v1.7.0)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.7.0/livekadeh_tunnel-mikrotik-chr.tar) | بسته آماده کانتینر روتربورد و میکروتیک CHR |
 
 ---
 
@@ -38,7 +40,7 @@
 
 ## 📱 راهنمای استفاده از نسخه اندروید (Android Quick Start)
 
-1. فایل `livekadeh_tunnel-android.apk` را دانلود و نصب کنید.
+1. فایل [LivekadehTunnel.apk](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.39/LivekadehTunnel.apk) را دانلود و نصب کنید.
 2. دسترسی‌های درخواستی (مجوز VPN Service و Notifications) را تأیید کنید.
 3. **افزودن کانفیگ**:
    - کلیک بر روی آیکون **QR Code** در گوشه صفحه برای اسکن کد ارائه شده توسط ادمین، یا
@@ -54,12 +56,14 @@
    - امکان انتخاب برنامه‌های خاص (Per-App Routing).
    - مسیر **IP Direct (Bypass)**: معاف کردن سایت‌های داخلی، بانکی یا رنج‌های شبکه محلی (`192.168.0.0/16`) حتی برای اپلیکیشن‌های انتخاب‌شده مانند کروم.
    - مسیر **IP Route (Proxy)**: هدایت آدرس‌ها و رنج‌های مشخص از درون تونل.
+8. **اشتراک‌گذاری روی هات‌اسپات و شبکه محلی (Hotspot Proxy Sharing)**:
+   - امکان فعال‌سازی پروکسی اتوماتیک HTTP/HTTPS روی پورت 8080 و SOCKS5 روی پورت 1080 برای اشتراک اینترنت آزاد روی سایر دستگاه‌ها، تلویزیون و کنسول بازی بدون نیاز به روت.
 
 ---
 
 ## 🪟 راهنمای استفاده از نسخه ویندوز (Windows Quick Start)
 
-1. فایل فشرده `livekadeh_tunnel-windows-x86_64.zip` را دانلود کرده و آن را از حالت فشرده استخراج (Extract) نمایید.
+1. فایل فشرده [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) را دانلود کرده و آن را از حالت فشرده استخراج (Extract) نمایید.
 2. روی فایل `livekadeh_tunnel.exe` راست‌کلیک کرده و گزینه **Run as administrator** را بزنید.
 3. **مدیریت پروفایل‌ها (Config Profiles)**:
    - کلید **+ New**: ساخت یک کانفیگ جدید.
@@ -68,6 +72,8 @@
    - کلید **Save**: ذخیره کانفیگ انتخاب‌شده.
    - کلید **Del**: حذف کانفیگ انتخاب‌شده.
 4. دکمه بزرگ **CONNECT TUNNEL** را بزنید. درایور قدرتمند لایه ۳ Wintun فعال شده و ترافیک رمزنگاری می‌شود.
+5. **اشتراک‌گذاری روی هات‌اسپات و شبکه محلی (Hotspot Sharing)**:
+   - با فعال‌سازی گزینه Hotspot Sharing در تنظیمات، تانل از طریق پورت 8080 برای سایر دستگاه‌های متصل به Wi-Fi یا هات‌اسپات به اشتراک گذاشته می‌شود.
 
 ---
 
