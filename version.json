@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.40",
-    "version_code": 32,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/LivekadehTunnel.apk",
-    "changelog": "افزودن همگام‌سازی تعاملی و قفل خودکار DNS محافظ خانواده (1.1.1.3) و ضدبدافزار (1.1.1.2) از سمت پنل سرور روی کلاینت اندروید"
+    "version": "1.9.42",
+    "version_code": 33,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.42/LivekadehTunnel.apk",
+    "changelog": "افزودن موتور دوگانه لایوکده و وایرگارد (WireGuard) با قابلیت انتخاب نوع تانل در بالای صفحه، اسکن QR و ایمپورت فایل .conf"
   },
   "windows": {
     "version": "1.9.41",
