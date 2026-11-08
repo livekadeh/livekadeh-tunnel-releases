@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.43",
-    "version_code": 34,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.43/LivekadehTunnel.apk",
-    "changelog": "آیکون‌های برند اختصاصی لایوکده و وایرگارد، دکمه بکاپ و اکسپورت جامع کانفیگ‌ها در اندروید، و ایجاد خودکار کانفیگ و بارکد وایرگارد در پنل مدیریت هسته CHR"
+    "version": "1.9.44",
+    "version_code": 35,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.44/LivekadehTunnel.apk",
+    "changelog": "ارتقای اسکنر دوربین بارکد به کیفیت HD 720p، تصحیح کنتراست بارکد وایرگارد به مشکی با ماژول‌های بزرگ، و اتصال مستقیم همگام‌ساز وایرگارد پنل به میکروتیک CHR"
   },
   "windows": {
     "version": "1.9.41",
