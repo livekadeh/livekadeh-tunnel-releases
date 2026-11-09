@@ -85,7 +85,7 @@ A lightweight, high-performance, full-duplex TCP/UDP stream-encrypted tunnel and
 | Platform | Engine & Architecture | Package Details | Direct Download |
 | :---: | :--- | :--- | :--- |
 | ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) | `arm64-v8a`, `armeabi-v7a`, `x86_64`<br>Android 7.0+ (API 24+) | **v1.9.47** (Dual Engine)<br>VpnService + WireGuard + Hotspot | [⬇️ **Download APK**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/LivekadehTunnel.apk) |
-| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | `x86_64` (64-bit)<br>Windows 10 / 11 / Server | **v1.9.41** (GUI & Hotspot)<br>Wintun L3 VPN + WinDivert Per-App | [⬇️ **Download Portable ZIP**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.41/livekadeh_tunnel-windows-x86_64.zip)<br>[⬇️ **Standalone EXE**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.41/livekadeh_tunnel.exe) |
+| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | `x86_64` (64-bit)<br>Windows 10 / 11 / Server | **v1.9.47** (Dual Engine & Hotspot)<br>Livekadeh Multipath + WireGuard + Per-App | [⬇️ **Download Portable ZIP**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/livekadeh_tunnel-windows-x86_64.zip)<br>[⬇️ **Standalone EXE**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/livekadeh_tunnel.exe) |
 | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | Universal (`arm64` & `x86_64`)<br>macOS 11.0+ (Big Sur+) | **v1.9.21** (Apple `utun`)<br>One-line terminal or DMG package | [⬇️ **Download DMG**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg) |
 | ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white) | `arm64` (iPhone & iPad)<br>iOS 15.0+ | **v1.9.10** (WebKit Client)<br>Anardoni, Sideloadly, TrollStore | [⬇️ **Download IPA**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa) |
 | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) | `x86_64` & `aarch64`<br>Ubuntu, Debian, CentOS, Alpine | **v1.9.10** (Kernel TUN)<br>Server & CLI Client in single binary | [⬇️ **Download Tarball**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz) |
@@ -152,7 +152,7 @@ The container will auto-start the server and display the **Encryption Key** in t
 
 ### 3. Windows Client Deployment (GUI, Hotspot & Per-App)
 
-1. Download and extract [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip).
+1. Download and extract [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/livekadeh_tunnel-windows-x86_64.zip).
 2. Run `livekadeh_tunnel.exe` as Administrator.
 3. Import configuration:
    - Click **"Import QR"** to parse a copied `livekadeh://` URI or QR code text from clipboard.
