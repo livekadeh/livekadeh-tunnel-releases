@@ -80,7 +80,7 @@ def main():
 | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | Universal (`arm64` & `x86_64`)<br>macOS 11.0+ (Big Sur+) | **v{macos_ver}** (Apple `utun`)<br>One-line terminal or DMG package | [⬇️ **Download DMG**]({macos_url}) |
 | ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white) | `arm64` (iPhone & iPad)<br>iOS 15.0+ | **v{ios_ver}** (WebKit Client)<br>Anardoni, Sideloadly, TrollStore | [⬇️ **Download IPA**]({ios_url}) |
 | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) | `x86_64` & `aarch64`<br>Ubuntu, Debian, CentOS, Alpine | **v1.9.10** (Kernel TUN)<br>Server & CLI Client in single binary | [⬇️ **Download Tarball**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz) |
-| ![MikroTik](https://img.shields.io/badge/MikroTik_CHR-222222?style=for-the-badge&logo=mikrotik&logoColor=white) | RouterOS v7 Container<br>`x86_64` Architecture | **v1.7.0** (Container Image)<br>Ready for `/container/add` import | [⬇️ **Download TAR Image**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.7.0/livekadeh_tunnel-mikrotik-chr.tar) |
+| ![MikroTik](https://img.shields.io/badge/MikroTik_CHR-222222?style=for-the-badge&logo=mikrotik&logoColor=white) | RouterOS v7 Container<br>`x86_64` Architecture | **v1.9.47** (Container Image)<br>Ready for `/container/add` import | [⬇️ **Download TAR Image**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/livekadeh_tunnel-mikrotik-chr.tar) |
 <!-- DOWNLOAD_TABLE_END -->"""
 
     with open(readme_path, "r", encoding="utf-8") as f:
