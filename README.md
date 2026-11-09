@@ -1,321 +1,230 @@
-# 🚀 Livekadeh Tunnel - Official Releases & API Documentation
+# Livekadeh Tunnel (لایوکده تانل)
 
-[![GitHub Release](https://img.shields.io/github/v/release/livekadeh/livekadeh-tunnel-releases?color=cyan&label=Latest%20Version)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/latest)
-[![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20Windows%20%7C%20Linux%20%7C%20macOS-blue)](#-client-downloads)
-[![License](https://img.shields.io/badge/License-Proprietary-red)](#)
-
-سامانه تانلینگ و وی‌پی‌ان اختصاصی لایوکده (Livekadeh Tunnel) با پروتکل رمزنگاری Zero-DPI و معماری چندمسیره (Multipath TCP & UDP) ، کاهش پینگ و پایدارسازی اینترنت.
+A lightweight, high-performance, full-duplex TCP/UDP stream-encrypted tunnel and WireGuard-style Virtual Network Adapter (Wintun L3 VPN, macOS `utun`, and Linux `tun`). Encrypts and tunnels arbitrary network traffic (All Ports, Browsing, SSH, Web, RDP, VoIP, Gaming, or specific Windows applications) between Linux / MikroTik CHR servers and Windows, Android, iOS, macOS, and Linux clients without SSL/TLS overhead, identifiable handshakes, or Deep Packet Inspection (DPI) fingerprints.
 
 ---
 
-## 📥 دانلود نسخه‌های کلاینت (Client Downloads - v1.9.40)
+## ⚡ Key Highlights
 
-| سیستم‌عامل (Platform) | معماری (Architecture) | لینک دانلود مستقیم (Direct Download) | توضیحات |
-| :--- | :--- | :--- | :--- |
-| **Windows** | `x86_64 (64-bit)` | [🪟 دانلود پکیج کامل Zip (v1.9.40)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) | شامل برنامه گرافیکی GUI، اشتراک هات‌اسپات، Wintun و WinDivert |
-| **Windows** | `x86_64 (Single Exe)` | [⚙️ دانلود فایل اجرایی livekadeh_tunnel.exe (v1.9.40)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel.exe) | فایل اجرایی با رابط گرافیکی (نیازمند wintun.dll) |
-| **Android** | `Universal (arm64, v7a, x86_64)` | [📱 دانلود مستقیم APK رسمی (v1.9.39)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.39/LivekadehTunnel.apk) | همراه با اشتراک تانل روی هات‌اسپات (پروکسی HTTP/SOCKS5)، ویدجت و اسپیدتست |
-| **macOS** | `Universal (Apple Silicon & Intel)` | [🍎 دانلود پکیج DMG مک (v1.9.21)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg) | نصاب دیسک ایمیج نیتیو بدون نیاز به ترمینال |
-| **macOS CLI** | `Apple Silicon (M1/M2/M3/M4)` | [🍏 دانلود نسخه مک ARM64 (v1.9.10)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-macos-arm64.tar.gz) | باینری نیتیو بدون نیاز به Rosetta |
-| **iOS (iPhone/iPad)** | `arm64 (iOS 14.0+)` | [🍏 دانلود مستقیم فایل IPA (v1.9.10)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa) | مناسب ثبت و امضا در اناردونی، سیب‌اپ، Sideloadly و AltStore |
-| **iOS Simulator** | `arm64 / x86_64` | [📦 دانلود پکیج شبیه‌ساز (App Bundle)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.app.zip) | تست مجازی در Appetize.io یا شبیه‌ساز مک |
-| **Linux** | `x86_64` | [🐧 دانلود نسخه لینوکس CLI (v1.9.10)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz) | دارای منوی ترمینالی تعاملی و مدیریت پروفایل‌ها |
-| **MikroTik CHR** | `RouterOS v7 Container` | [📦 دانلود ایمیج کانتینر میکروتیک (v1.7.0)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.7.0/livekadeh_tunnel-mikrotik-chr.tar) | بسته آماده کانتینر روتربورد و میکروتیک CHR |
-
----
-
-## 🍏 راهنمای استفاده از نسخه iOS (iPhone & iPad Quick Start)
-
-1. **ثبت و امضا (Signing & Installation)**:
-   - فایل `LivekadehTunnel.ipa` را دانلود نموده و جهت امضای شرکتی یا ادهاک در سامانه‌هایی نظیر **اناردونی (Anardoni)**، **سیب‌اپ** یا **آی‌اپس** ثبت نمایید.
-   - همچنین برای استفاده رایگان با اپل‌آیدی شخصی می‌توانید از برنامه‌های **Sideloadly** یا **AltStore** بر روی ویندوز یا مک استفاده کنید.
-2. **افزودن سریع کانفیگ با لینک**:
-   - در پنل مدیریت ادمین روی دکمه **کپی لینک (livekadeh://)** کلیک کنید.
-   - در اپلیکیشن، لینک کپی‌شده را در بخش پروفایل وارد نمایید تا کلیه مشخصات سرور، کلید و پورت آنی ست شوند.
-3. **اسکن QR Code**:
-   - اسکن مستقیم از طریق دوربین گوشی یا انتخاب عکس/اسکرین‌شات کیوآرکد از آلبوم تصاویر.
-4. **مدیریت پروفایل‌ها (Multi-Profile)**:
-   - تعریف چندین سرور مجزا و انتخاب سریع از صفحه اصلی بدون نیاز به ورود مجدد اطلاعات.
-
-
-## 📱 راهنمای استفاده از نسخه اندروید (Android Quick Start)
-
-1. فایل [LivekadehTunnel.apk](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.39/LivekadehTunnel.apk) را دانلود و نصب کنید.
-2. دسترسی‌های درخواستی (مجوز VPN Service و Notifications) را تأیید کنید.
-3. **افزودن کانفیگ**:
-   - کلیک بر روی آیکون **QR Code** در گوشه صفحه برای اسکن کد ارائه شده توسط ادمین، یا
-   - کپی کردن لینک کانفیگ (`livekadeh://...`) و زدن گزینه Import from Clipboard، یا
-   - ورود دستی آدرس سرور (IP:Port) و کلید رمزنگاری (Key).
-4. **مدیریت چند کانفیگ (Multi-Profile)**:
-   - با لمس آیکون پروفایل در نوار بالایی می‌توانید چندین سرور/کانفیگ مختلف را با نام دلخواه ذخیره کرده و به سادگی بین آنها سوئیچ کنید.
-5. **ویدجت صفحه اصلی (Home Screen Widget)**:
-   - روی صفحه اصلی گوشی دست خود را نگه دارید، بخش ابزارک‌ها (Widgets) را باز کنید و **Livekadeh Tunnel** را اضافه کنید تا با یک کلیک وصل/قطع شوید.
-6. **ریکانکت خودکار و یکپارچه**:
-   - در صورت تغییر شبکه (سوئیچ از Wi-Fi به همراه اول/ایرانسل یا بالعکس)، اپلیکیشن به صورت هوشمند و بدون خاموش شدن VPN، سشن را در شبکه جدید بازیابی می‌کند.
-7. **تفکیک ترافیک و روتینگ اختصاصی (Split Tunneling & IP Rules)**:
-   - امکان انتخاب برنامه‌های خاص (Per-App Routing).
-   - مسیر **IP Direct (Bypass)**: معاف کردن سایت‌های داخلی، بانکی یا رنج‌های شبکه محلی (`192.168.0.0/16`) حتی برای اپلیکیشن‌های انتخاب‌شده مانند کروم.
-   - مسیر **IP Route (Proxy)**: هدایت آدرس‌ها و رنج‌های مشخص از درون تونل.
-8. **اشتراک‌گذاری روی هات‌اسپات و شبکه محلی (Hotspot Proxy Sharing)**:
-   - امکان فعال‌سازی پروکسی اتوماتیک HTTP/HTTPS روی پورت 8080 و SOCKS5 روی پورت 1080 برای اشتراک اینترنت آزاد روی سایر دستگاه‌ها، تلویزیون و کنسول بازی بدون نیاز به روت.
-
----
-
-## 🪟 راهنمای استفاده از نسخه ویندوز (Windows Quick Start)
-
-1. فایل فشرده [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) را دانلود کرده و آن را از حالت فشرده استخراج (Extract) نمایید.
-2. روی فایل `livekadeh_tunnel.exe` راست‌کلیک کرده و گزینه **Run as administrator** را بزنید.
-3. **مدیریت پروفایل‌ها (Config Profiles)**:
-   - کلید **+ New**: ساخت یک کانفیگ جدید.
-   - نام پروفایل را مستقیماً در کادر مربوطه تایپ کنید.
-   - آدرس سرور و کلید رمزنگاری را وارد کنید (یا روی دکمه Import QR کلیک کنید).
-   - کلید **Save**: ذخیره کانفیگ انتخاب‌شده.
-   - کلید **Del**: حذف کانفیگ انتخاب‌شده.
-4. دکمه بزرگ **CONNECT TUNNEL** را بزنید. درایور قدرتمند لایه ۳ Wintun فعال شده و ترافیک رمزنگاری می‌شود.
-5. **اشتراک‌گذاری روی هات‌اسپات و شبکه محلی (Hotspot Sharing)**:
-   - با فعال‌سازی گزینه Hotspot Sharing در تنظیمات، تانل از طریق پورت 8080 برای سایر دستگاه‌های متصل به Wi-Fi یا هات‌اسپات به اشتراک گذاشته می‌شود.
+- **Dual-Engine Architecture (Livekadeh + WireGuard Client):**
+  - Use the client as a full WireGuard VPN application or a native Livekadeh tunnel.
+  - Import standard WireGuard configuration files (`.conf`), paste raw keys, or scan QR codes.
+  - Run the native userspace WireGuard engine (`libwg-go`) directly inside the app.
+  - Combine standard WireGuard with Livekadeh Tunnel features:
+    - **Server DNS Shield:** Enforce automatic family protection and anti-malware filters.
+    - **Anti-Sanction DNS Presets:** Bypass regional service blocks with built-in Iranian DNS servers.
+    - **Per-App Routing:** Split traffic to route specific applications or bypass domestic domains.
+    - **Profile Management:** Store multiple WireGuard and Livekadeh configurations with separate active memory.
+    - **Real-Time Monitoring:** View live handshake status, data transfer counters, and account expiration.
+- **Hotspot & Local Network Proxy Sharing (Android & Windows):**
+  - Share the encrypted tunnel across local devices, smart TVs, and gaming consoles.
+  - Integrated HTTP, HTTPS, and SOCKS5 proxy server on ports 8080 and 1080 without requiring root access.
+  - Transparent Root NAT policy routing and transparent TLS SNI proxy for zero-configuration tethering.
+  - Real-time connected client monitor with ARP MAC discovery and request counters.
+- **Per-Application Flow Routing (Windows):**
+  - Route selected application executables through the encrypted tunnel via WinDivert.
+  - Dual-stack bypass protection with automated IPv6 filtering.
+  - Native UDP, QUIC (port 443), and DNS flow diversion with MSS clamping.
+- **Custom Split Rules & Anti-Sanction DNS Presets:**
+  - Route specific traffic with IP direct, CIDR bypass, and custom domain rules.
+  - Preloaded Iranian anti-sanction DNS servers (Shecan, Electro, 403, Radar, Begzar).
+- **1-Line Automated Server Installer:**
+  - Fast curl installation for Ubuntu, Debian, CentOS, AlmaLinux, Rocky, Alpine, and Arch.
+  - Automatically sets up systemd service, IP forwarding, and Web Management Panel.
+- **Multi-User Web Management Panel & QR Code:**
+  - Modern web dashboard running on port 8444.
+  - Multi-user authentication, client bandwidth tracking, and instant QR Code generation (`livekadeh://<key>@<host>:<port>`).
+- **QR Code Configuration Import Across All Clients:**
+  - **Android:** Direct QR Code camera and gallery image scanner powered by ZXing.
+  - **Windows:** Instant "Import QR" button importing `livekadeh://` configuration or 64-hex keys from clipboard.
+  - **macOS / Linux CLI:** Interactive prompt accepts raw `host:port` and `livekadeh://` URIs.
+  - **Empty By Default:** No hardcoded server IPs or keys; all fields remain clean for user configuration.
+- **In-App Auto-Updates Across All Platforms:**
+  - **CLI / Linux / macOS:** Run `livekadeh_tunnel -u` to self-update automatically from GitHub.
+  - **Windows:** "About Tunnel" and "Check Updates" buttons check and download the latest release.
+  - **Android:** In-app update dialog checks GitHub releases and downloads APK updates directly.
+- **Multi-Client Support with Dynamic IP Pool (10.10.10.2 - 10.10.10.254):**
+  - Connect concurrent users simultaneously with independent sessions and traffic quotas.
+- **Dual-Stack Transport (Multi-TCP & UDP Datagrams):**
+  - **UDP Datagram Mode:** Ultra-low latency, stateless per-packet ChaCha20 encryption with automatic NAT mobility handling.
+  - **8-Lane Multi-TCP Transport Engine:** Establishes **8 parallel, independent encrypted TCP streams** between client and server to bypass ISP single-stream bandwidth throttling.
+  - **Intelligent 5-Tuple Flow Hashing:** Pins IP flows to lanes, guaranteeing **zero packet reordering**.
+- **In-Tunnel Speed Test & Benchmark Tool:**
+  - Integrated speed test suite on port 9090 measuring real in-tunnel RTT latency and throughput.
+- **Remote Server Security & Centralized IP Blocklist:**
+  - Server automatically cross-references GitHub `blocked_servers.json` to verify operational authorization.
+- **MikroTik CHR (RouterOS v7 Container) Ready:**
+  - Dedicated pre-packaged `.tar` image (`livekadeh_tunnel-mikrotik-chr.tar`) ready for MikroTik `/container/add`.
+  - Supports configurable tunnel ports (`PORT=8585` or custom).
+  - Automatically displays the active encryption key in the MikroTik Container Log.
 
 ---
 
-## 📡 مستندات جامع REST API پنل مدیریت (Admin Panel API Documentation)
+## 📁 Directory Structure
 
-پنل مدیریت لایوکده دارای یک وب‌سرویس RESTful مدرن بر پایه JSON است که امکان اتصال به ربات‌های تلگرام، پنل‌های فروش، سامانه‌های مانیتورینگ و اسکریپت‌های اتوماسیون را فراهم می‌کند.
-
-**آدرس پایه (Base URL):**
 ```
-http://<SERVER_IP>:8444
-```
-
----
-
-### ۱. احراز هویت (Authentication)
-
-#### ورود مدیر (Login)
-* **متد:** `POST`
-* **مسیر:** `/api/auth/login`
-* **بدنه درخواست (JSON):**
-```json
-{
-  "username": "admin",
-  "password": "YOUR_ADMIN_PASSWORD"
-}
-```
-* **پاسخ موفق (200 OK):**
-```json
-{
-  "status": "ok",
-  "message": "Login successful"
-}
-```
-*(کوکی سشن به صورت خودکار در مرورگر یا کلاینت HTTP ذخیره می‌شود)*
-
-#### خروج مدیر (Logout)
-* **متد:** `POST`
-* **مسیر:** `/api/auth/logout`
-
----
-
-### ۲. اطلاعات و آمار سیستم (System Info & Health)
-
-* **متد:** `GET`
-* **مسیر:** `/api/system`
-* **توضیحات:** دریافت اطلاعات سخت‌افزاری سرور، مصرف رم و CPU، نسخه سیستم، کل حجم تبادل‌شده، و تعداد کاربران آنلاین.
-* **نمونه پاسخ (200 OK):**
-```json
-{
-  "status": "ok",
-  "server": {
-    "version": "1.9.1",
-    "uptime": 86400,
-    "total_rx": 5368709120,
-    "total_tx": 10737418240,
-    "active_sessions": 12
-  },
-  "system": {
-    "loadAvg": [0.15, 0.22, 0.18],
-    "memTotal": 4294967296,
-    "memUsed": 1073741824,
-    "memPercent": 25,
-    "cpuCount": 4,
-    "hostname": "livekadeh-core-1",
-    "serverIp": "YOUR_SERVER_IP",
-    "serverPort": 8443,
-    "version": "1.9.1"
-  },
-  "totalUsers": 25,
-  "onlineUsers": 12
-}
+livekadeh_tunnel/
+├── crypto.h              # Standalone SHA-256, HMAC-SHA256 & RFC 8439 ChaCha20
+├── tunnel_common.h       # Cross-platform socket and threading abstractions
+├── menu_cli.h            # Interactive terminal menu & URI configuration parser
+├── tun_proto.h           # L3 Packet framing and transport engine
+├── tun_linux.h           # Linux TUN device (/dev/net/tun) & NAT masquerade
+├── tun_darwin.h          # macOS utun Apple system control device
+├── tun_wintun.h          # Windows Wintun adapter and WFP IPv6 protection
+├── tun_windivert.h       # Windows per-application IPv4 flow routing & MSS clamping
+├── proxy_win32.h         # Windows hotspot & LAN proxy sharing engine
+├── gui_win32.h           # Native Windows GUI (Acrylic / Mica theme + QR Import + Hotspot)
+├── panel/                # Node.js Web Management Panel & Multi-User API
+│   ├── server.js         # HTTP API, user database, and GitHub blocklist monitor
+│   └── public/           # Admin Web Panel frontend
+├── android/              # Jetpack Compose Native Android Client (VpnService + Hotspot Proxy + ZXing)
+├── ios/                  # iOS (iPhone / iPad) Native Client & Anardoni IPA Package
+│   ├── LivekadehTunnel/  # Mach-O ARM64 native app, Info.plist, and WebKit UI
+│   └── sdk/              # Cross-compilation SDK stubs for Linux
+├── scripts/
+│   ├── build_ios.sh      # Automated iOS Mach-O arm64 compilation and IPA packager
+│   ├── install_server.sh # 1-Line Linux Server & Panel Installer
+│   └── install_macos.sh  # 1-Line macOS Client Installer
+├── blocked_servers.json  # Centralized GitHub Server IP Blocklist
+├── main.c                # Single unified engine entrypoint
+└── build/
+    ├── livekadeh_tunnel                    # Linux 64-bit unified binary
+    ├── livekadeh_tunnel.exe                # Windows 64-bit unified binary
+    ├── livekadeh_tunnel-macos-arm64        # macOS Apple Silicon binary
+    ├── livekadeh_tunnel-macos-x86_64       # macOS Intel binary
+    ├── livekadeh_tunnel-android.apk        # Android Release APK (Signed)
+    └── livekadeh_tunnel-mikrotik-chr.tar   # MikroTik CHR Container image
 ```
 
 ---
 
-### ۳. مدیریت کاربران (Client Management)
+## 🌐 Public GitHub Repository & Downloads
 
-#### ۳.۱. لیست تمامی کاربران
-* **متد:** `GET`
-* **مسیر:** `/api/users`
-* **نمونه پاسخ:**
-```json
-{
-  "status": "ok",
-  "users": [
-    {
-      "assigned_ip": 10,
-      "assigned_ip_str": "10.10.10.10",
-      "name": "User-Ali",
-      "enabled": 1,
-      "online": 1,
-      "type": "TCP",
-      "num_conns": 8,
-      "remote_ip": "203.0.113.42:54321",
-      "country": "Iran",
-      "country_code": "IR",
-      "country_emoji": "🇮🇷",
-      "isp": "Mobile Telecommunication Company of Iran (MCI)",
-      "total_rx": 104857600,
-      "total_tx": 524288000,
-      "max_bytes": 53687091200,
-      "expires_at": 1795000000,
-      "speed_limit_kbps": 20480
-    }
-  ]
-}
-```
-
-#### ۳.۲. ساخت کاربر جدید (Add User)
-* **متد:** `POST`
-* **مسیر:** `/api/users`
-* **بدنه درخواست (JSON):**
-```json
-{
-  "name": "Reza",
-  "expireDays": 30,
-  "maxGb": 50,
-  "speedLimitMbps": 20
-}
-```
-* **توضیحات پارامترها:**
-  - `name`: نام نمایشی کاربر (الزامی)
-  - `expireDays`: مدت اعتبار به روز (صفر یا خالی برای دائمی)
-  - `maxGb`: محدودیت حجم مصرفی به گیگابایت (صفر یا خالی برای نامحدود)
-  - `speedLimitMbps`: سقف سرعت دانلود/آپلود به مگابیت بر ثانیه (صفر برای نامحدود)
-* **نمونه پاسخ:**
-```json
-{
-  "status": "ok",
-  "user": {
-    "assigned_ip": 11,
-    "name": "Reza",
-    "key_hex": "e4f8a1...",
-    "configUrl": "livekadeh://e4f8a1...@YOUR_SERVER_IP:8443?name=Reza"
-  }
-}
-```
-
-#### ۳.۳. ویرایش اطلاعات کاربر (Update User)
-* **متد:** `PUT`
-* **مسیر:** `/api/users/:assignedIp`
-* **بدنه درخواست (JSON):**
-```json
-{
-  "enabled": 1,
-  "expireDays": 60,
-  "maxGb": 100,
-  "speedLimitMbps": 50
-}
-```
-
-#### ۳.۴. قطع اتصال فعال کاربر (Kick User)
-* **متد:** `POST`
-* **مسیر:** `/api/users/:assignedIp/kick`
-* **توضیحات:** سشن فعال و تانل کلاینت را بدون حذف حساب کاربری او بلافاصله قطع می‌کند.
-
-#### ۳.۵. ریست حجم مصرفی (Reset Traffic)
-* **متد:** `POST`
-* **مسیر:** `/api/users/:assignedIp/reset-traffic`
-* **توضیحات:** میزان ترافیک مصرف شده (TX/RX) کاربر را صفر می‌کند.
-
-#### ۳.۶. حذف دائمی کاربر (Delete User)
-* **متد:** `DELETE`
-* **مسیر:** `/api/users/:assignedIp`
-
-#### ۳.۷. دریافت کانفیگ و QR Code کاربر
-* **متد:** `GET`
-* **مسیر:** `/api/users/:assignedIp/config`
-* **نمونه پاسخ:**
-```json
-{
-  "status": "ok",
-  "configUrl": "livekadeh://e4f8a1...@YOUR_SERVER_IP:8443?name=Reza",
-  "serverIp": "YOUR_SERVER_IP",
-  "serverPort": 8443,
-  "assignedInternalIp": "10.10.10.11",
-  "keyHex": "e4f8a1b2c3d4..."
-}
-```
-
-#### ۳.۸. تنظیمات سرور و پورت اتصال (Server Connection Settings)
-* **متد:** `GET` / `POST`
-* **مسیر:** `/api/settings`
-* **توضیحات:** مشاهده و تنظیم آدرس عمومی سرور و پورت اتصال تانل جهت درج دقیق در بارکد QR و لینک‌های اتصال.
-
-
-#### ۳.۹. استعلام بلادرنگ وضعیت کلاینت و ترافیک (Client Account Status)
-* **متد:** `GET`
-* **مسیر:** `/api/client/status?key=CLIENT_KEY`
-* **توضیحات:** این اندپوینت نیازی به لاگین ادمین ندارد و توسط اپلیکیشن‌های کلاینت (نظیر اندروید) برای بررسی حجم باقیمانده، تاریخ انقضا و وضعیت اکانت فراخوانی می‌شود.
-* **نمونه پاسخ:**
-```json
-{
-  "status": "ok",
-  "user": {
-    "name": "Reza",
-    "assigned_ip_str": "100.96.0.2",
-    "enabled": true,
-    "max_bytes": 53687091200,
-    "used_bytes": 10485760000,
-    "remaining_bytes": 43201331200,
-    "expires_at": 1795000000,
-    "remaining_seconds": 2592000,
-    "is_expired": false,
-    "is_quota_exceeded": false
-  }
-}
-```
-
+- **GitHub Source Repository:** [https://github.com/livekadeh/livekadeh-tunnel](https://github.com/livekadeh/livekadeh-tunnel)
+- **Official Releases Repository:** [https://github.com/livekadeh/livekadeh-tunnel-releases](https://github.com/livekadeh/livekadeh-tunnel-releases)
+- **Latest Windows Release (v1.9.40):**
+  - [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) (Portable Zip with GUI, Wintun, and WinDivert)
+  - [livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel.exe) (Standalone Executable)
+- **Latest Android App (v1.9.47):**
+  - [LivekadehTunnel.apk](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/LivekadehTunnel.apk) (Signed Release APK)
+- **macOS Universal Package (v1.9.21):**
+  - [LivekadehTunnel-macOS.dmg](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg) (Apple Silicon & Intel)
+- **iOS Client Package (v1.9.10):**
+  - [LivekadehTunnel.ipa](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa) (Anardoni / Sideload IPA)
+- **Linux Server / Client (v1.9.10):**
+  - [livekadeh_tunnel-linux-x86_64.tar.gz](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz)
+- **MikroTik CHR RouterOS v7 Container (v1.7.0):**
+  - [livekadeh_tunnel-mikrotik-chr.tar](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.7.0/livekadeh_tunnel-mikrotik-chr.tar)
 
 ---
 
-### ۴. پشتیبان‌گیری و بازیابی (Backup & Restore)
+## 🚀 Quick Start & Deployment Guide
 
-#### دریافت فایل بکاپ (Export Backup)
-* **متد:** `GET`
-* **مسیر:** `/api/backup`
-* **توضیحات:** یک فایل کامل JSON از تمامی تنظیمات، اکانت‌ها، کلیدها و اعتبارات دانلود می‌کند.
+### 1. Linux Server 1-Line Quick Install (Recommended)
 
-#### بازگردانی بکاپ (Import Restore)
-* **متد:** `POST`
-* **مسیر:** `/api/restore`
-* **بدنه درخواست:** محتوای JSON بکاپ قبلی.
-
----
-
-## 🛠️ نمونه کدهای cURL برای توسعه‌دهندگان
+Run this single command on your Ubuntu, Debian, CentOS, or Alpine server as root:
 
 ```bash
-# ۱. لاگین در پنل و ذخیره کوکی در فایل cookies.txt
-curl -c cookies.txt -X POST http://YOUR_SERVER:8444/api/auth/login \
-     -H "Content-Type: application/json" \
-     -d '{"username":"admin","password":"YOUR_PASSWORD"}'
+curl -sSL https://raw.githubusercontent.com/livekadeh/livekadeh-tunnel/main/scripts/install_server.sh | sudo bash
+```
 
-# ۲. ساخت کاربر جدید با ۵۰ گیگ حجم و اعتبار ۱ ماهه
-curl -b cookies.txt -X POST http://YOUR_SERVER:8444/api/users \
-     -H "Content-Type: application/json" \
-     -d '{"name":"TestClient","expireDays":30,"maxGb":50,"speedLimitMbps":20}'
+The script automatically performs these tasks:
+- Detects system architecture (`x86_64` or `aarch64`).
+- Enables `net.ipv4.ip_forward=1`.
+- Installs `livekadeh_tunnel` to `/usr/local/bin`.
+- Installs and enables the `livekadeh-tunnel` systemd service.
+- Deploys the Web Management Panel at `http://<SERVER_IP>:8444`.
+- Generates a fresh 256-bit encryption key and prints complete connection credentials.
 
-# ۳. دریافت وضعیت سرور و کاربران آنلاین
-curl -b cookies.txt -X GET http://YOUR_SERVER:8444/api/system
+---
+
+### 2. MikroTik CHR Server Deployment (Container)
+
+#### A. Enable Container Mode on MikroTik:
+```routeros
+/system/device-mode/update container=yes
+/system/reboot
+```
+
+#### B. Setup Network Bridge & VETH:
+```routeros
+/interface/veth/add name=veth-livekadeh address=172.17.0.2/24 gateway=172.17.0.1
+/interface/bridge/add name=bridge-docker
+/ip/address/add address=172.17.0.1/24 interface=bridge-docker
+/interface/bridge/port add bridge=bridge-docker interface=veth-livekadeh
+
+/ip/firewall/nat/add chain=srcnat action=masquerade src-address=172.17.0.0/24
+/ip/firewall/nat/add chain=dstnat action=dst-nat to-addresses=172.17.0.2 to-ports=8443 protocol=tcp dst-port=8443
+/ip/firewall/nat/add chain=dstnat action=dst-nat to-addresses=172.17.0.2 to-ports=8443 protocol=udp dst-port=8443
+```
+*(If forwarding on a custom port such as 8585, add env `PORT=8585` and adjust dst-nat to-ports).*
+
+#### C. Upload and Start Container:
+1. Upload `livekadeh_tunnel-mikrotik-chr.tar` to your MikroTik storage via WinBox (Files) or SFTP.
+2. In RouterOS Terminal:
+```routeros
+/container/add file=livekadeh_tunnel-mikrotik-chr.tar interface=veth-livekadeh logging=yes
+/container/start 0
+```
+3. Check the WinBox **Log** window or run:
+```routeros
+/log/print where topics~"container"
+```
+The container will auto-start the server and display the **Encryption Key** in the log!
+
+---
+
+### 3. Windows Client Deployment (GUI, Hotspot & Per-App)
+
+1. Download and extract [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip).
+2. Run `livekadeh_tunnel.exe` as Administrator.
+3. Import configuration:
+   - Click **"Import QR"** to parse a copied `livekadeh://` URI or QR code text from clipboard.
+   - Or manually enter the remote Server IP (`<SERVER_IP>:8443`) and secret key.
+4. (Optional) Enable **Per-App Routing** to route only selected applications through the tunnel.
+5. (Optional) Enable **Hotspot / LAN Sharing** to share the tunnel with other devices via HTTP/SOCKS5 proxy.
+6. Click **[ CONNECT TUNNEL ]**.
+
+---
+
+### 4. Android Client (Dual Engine: Livekadeh & WireGuard)
+
+1. Download and install [LivekadehTunnel.apk (v1.9.47)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/LivekadehTunnel.apk).
+2. Select your protocol tab at the top: **Livekadeh Tunnel** or **WireGuard**.
+3. Import your server configuration:
+   - **For Livekadeh:** Tap **"Scan / Import QR Code"** to scan a server key or paste a URI.
+   - **For WireGuard:** Tap **"📂 Import"** to load a `.conf` file, or scan a WireGuard QR code.
+4. (Optional) Open **Advanced Settings** to configure DNS Shield, MTU size, and Per-App routing.
+5. Tap **[ CONNECT ]** to start the secure VPN connection.
+6. (Optional) Use the **Hotspot Sharing** card to share VPN access with other devices on your Wi-Fi hotspot.
+7. Use the Quick Settings Tile for instant 1-tap toggling.
+
+---
+
+### 5. macOS Client Deployment
+
+#### Download DMG Package:
+Download and mount [LivekadehTunnel-macOS.dmg](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg).
+
+#### One-Line Terminal Installation:
+```bash
+curl -sL https://raw.githubusercontent.com/livekadeh/livekadeh-tunnel/main/scripts/install_macos.sh | sudo bash
+```
+
+#### Connect as Full VPN Client:
+```bash
+# Multi-TCP Lane Mode:
+sudo livekadeh client -s YOUR_SERVER_IP:8443 -k YOUR_KEY -g
+
+# Ultra Low-Latency UDP Datagram Mode:
+sudo livekadeh client -s YOUR_SERVER_IP:8443 -k YOUR_KEY -u -g
 ```
 
 ---
-*توسعه داده شده با ❤️ برای آزادی اینترنت و پایداری شبکه.*
+
+### 6. In-App Updates & Maintenance
+
+- **CLI / Linux / macOS:** Run `livekadeh_tunnel -u` to check GitHub and automatically install the newest release.
+- **Windows GUI:** Click **"About Tunnel"** -> **"Check Updates"**.
+- **Android:** Tap the three dots menu -> **"About"** -> **"Check for Updates"**.
+- **Status Check:** Run `livekadeh_tunnel -status` to see connected users, live speed, and active interface status.
