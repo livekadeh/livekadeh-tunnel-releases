@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.44",
-    "version_code": 35,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.44/LivekadehTunnel.apk",
-    "changelog": "ارتقای اسکنر دوربین بارکد به کیفیت HD 720p، تصحیح کنتراست بارکد وایرگارد به مشکی با ماژول‌های بزرگ، و اتصال مستقیم همگام‌ساز وایرگارد پنل به میکروتیک CHR"
+    "version": "1.9.45",
+    "version_code": 36,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.45/LivekadehTunnel.apk",
+    "changelog": "پشتیبانی کامل از وضعیت حساب، ترافیک، انقضا و لاگ‌های زنده برای پروتکل وایرگارد + تصحیح قفل DNS محافظ خانواده (DNS Shield) روی وایرگارد و لایوکده"
   },
   "windows": {
     "version": "1.9.41",
