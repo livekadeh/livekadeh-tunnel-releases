@@ -60,47 +60,8 @@ A lightweight, high-performance, full-duplex TCP/UDP stream-encrypted tunnel and
 
 ---
 
-## 📁 Directory Structure
+## 🌐 Official Downloads & Releases
 
-```
-livekadeh_tunnel/
-├── crypto.h              # Standalone SHA-256, HMAC-SHA256 & RFC 8439 ChaCha20
-├── tunnel_common.h       # Cross-platform socket and threading abstractions
-├── menu_cli.h            # Interactive terminal menu & URI configuration parser
-├── tun_proto.h           # L3 Packet framing and transport engine
-├── tun_linux.h           # Linux TUN device (/dev/net/tun) & NAT masquerade
-├── tun_darwin.h          # macOS utun Apple system control device
-├── tun_wintun.h          # Windows Wintun adapter and WFP IPv6 protection
-├── tun_windivert.h       # Windows per-application IPv4 flow routing & MSS clamping
-├── proxy_win32.h         # Windows hotspot & LAN proxy sharing engine
-├── gui_win32.h           # Native Windows GUI (Acrylic / Mica theme + QR Import + Hotspot)
-├── panel/                # Node.js Web Management Panel & Multi-User API
-│   ├── server.js         # HTTP API, user database, and GitHub blocklist monitor
-│   └── public/           # Admin Web Panel frontend
-├── android/              # Jetpack Compose Native Android Client (VpnService + Hotspot Proxy + ZXing)
-├── ios/                  # iOS (iPhone / iPad) Native Client & Anardoni IPA Package
-│   ├── LivekadehTunnel/  # Mach-O ARM64 native app, Info.plist, and WebKit UI
-│   └── sdk/              # Cross-compilation SDK stubs for Linux
-├── scripts/
-│   ├── build_ios.sh      # Automated iOS Mach-O arm64 compilation and IPA packager
-│   ├── install_server.sh # 1-Line Linux Server & Panel Installer
-│   └── install_macos.sh  # 1-Line macOS Client Installer
-├── blocked_servers.json  # Centralized GitHub Server IP Blocklist
-├── main.c                # Single unified engine entrypoint
-└── build/
-    ├── livekadeh_tunnel                    # Linux 64-bit unified binary
-    ├── livekadeh_tunnel.exe                # Windows 64-bit unified binary
-    ├── livekadeh_tunnel-macos-arm64        # macOS Apple Silicon binary
-    ├── livekadeh_tunnel-macos-x86_64       # macOS Intel binary
-    ├── livekadeh_tunnel-android.apk        # Android Release APK (Signed)
-    └── livekadeh_tunnel-mikrotik-chr.tar   # MikroTik CHR Container image
-```
-
----
-
-## 🌐 Public GitHub Repository & Downloads
-
-- **GitHub Source Repository:** [https://github.com/livekadeh/livekadeh-tunnel](https://github.com/livekadeh/livekadeh-tunnel)
 - **Official Releases Repository:** [https://github.com/livekadeh/livekadeh-tunnel-releases](https://github.com/livekadeh/livekadeh-tunnel-releases)
 - **Latest Windows Release (v1.9.40):**
   - [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) (Portable Zip with GUI, Wintun, and WinDivert)
