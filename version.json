@@ -1,9 +1,9 @@
 {
   "android": {
-    "version": "1.9.45",
-    "version_code": 36,
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.45/LivekadehTunnel.apk",
-    "changelog": "پشتیبانی کامل از وضعیت حساب، ترافیک، انقضا و لاگ‌های زنده برای پروتکل وایرگارد + تصحیح قفل DNS محافظ خانواده (DNS Shield) روی وایرگارد و لایوکده"
+    "version": "1.9.47",
+    "version_code": 38,
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/LivekadehTunnel.apk",
+    "changelog": "رفع مشکل بازگشت پروفایل وایرگارد به گزینه اول، جداسازی پروفایل فعال هر پروتکل، و تصحیح چیدمان تنظیمات پیشرفته در حالت وایرگارد"
   },
   "windows": {
     "version": "1.9.41",
