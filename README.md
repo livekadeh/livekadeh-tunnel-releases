@@ -1,4 +1,19 @@
-# Livekadeh Tunnel (لایوکده تانل)
+<div align="center">
+
+# 🚀 Livekadeh Tunnel (لایوکده تانل)
+
+**High-Performance Dual-Engine VPN & Stream-Encrypted Tunnel**  
+*Ultra-low Latency ChaCha20 L3 VPN + Native Userspace WireGuard Engine*
+
+[![Latest Release](https://img.shields.io/github/v/release/livekadeh/livekadeh-tunnel-releases?color=00E5FF&label=Release&logo=github&style=for-the-badge)](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/latest)
+[![WireGuard Engine](https://img.shields.io/badge/WireGuard-Native%20GoBackend-88171A?style=for-the-badge&logo=wireguard&logoColor=white)](https://www.wireguard.com/)
+[![License](https://img.shields.io/badge/License-Proprietary-FF5252?style=for-the-badge)](LICENSE)
+[![Dual Stack](https://img.shields.io/badge/Dual--Stack-Multi--TCP%20%7C%20UDP-7C4DFF?style=for-the-badge)](README.md)
+[![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20Windows%20%7C%20macOS%20%7C%20iOS%20%7C%20Linux%20%7C%20MikroTik-00E676?style=for-the-badge)](README.md)
+
+</div>
+
+---
 
 A lightweight, high-performance, full-duplex TCP/UDP stream-encrypted tunnel and WireGuard-style Virtual Network Adapter (Wintun L3 VPN, macOS `utun`, and Linux `tun`). Encrypts and tunnels arbitrary network traffic (All Ports, Browsing, SSH, Web, RDP, VoIP, Gaming, or specific Windows applications) between Linux / MikroTik CHR servers and Windows, Android, iOS, macOS, and Linux clients without SSL/TLS overhead, identifiable handshakes, or Deep Packet Inspection (DPI) fingerprints.
 
@@ -63,19 +78,19 @@ A lightweight, high-performance, full-duplex TCP/UDP stream-encrypted tunnel and
 ## 🌐 Official Downloads & Releases
 
 - **Official Releases Repository:** [https://github.com/livekadeh/livekadeh-tunnel-releases](https://github.com/livekadeh/livekadeh-tunnel-releases)
-- **Latest Windows Release (v1.9.40):**
-  - [livekadeh_tunnel-windows-x86_64.zip](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel-windows-x86_64.zip) (Portable Zip with GUI, Wintun, and WinDivert)
-  - [livekadeh_tunnel.exe](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.40/livekadeh_tunnel.exe) (Standalone Executable)
-- **Latest Android App (v1.9.47):**
-  - [LivekadehTunnel.apk](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/LivekadehTunnel.apk) (Signed Release APK)
-- **macOS Universal Package (v1.9.21):**
-  - [LivekadehTunnel-macOS.dmg](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg) (Apple Silicon & Intel)
-- **iOS Client Package (v1.9.10):**
-  - [LivekadehTunnel.ipa](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa) (Anardoni / Sideload IPA)
-- **Linux Server / Client (v1.9.10):**
-  - [livekadeh_tunnel-linux-x86_64.tar.gz](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz)
-- **MikroTik CHR RouterOS v7 Container (v1.7.0):**
-  - [livekadeh_tunnel-mikrotik-chr.tar](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.7.0/livekadeh_tunnel-mikrotik-chr.tar)
+
+### 📥 Client Packages & Downloads
+
+<!-- DOWNLOAD_TABLE_START -->
+| Platform | Engine & Architecture | Package Details | Direct Download |
+| :---: | :--- | :--- | :--- |
+| ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) | `arm64-v8a`, `armeabi-v7a`, `x86_64`<br>Android 7.0+ (API 24+) | **v1.9.47** (Dual Engine)<br>VpnService + WireGuard + Hotspot | [⬇️ **Download APK**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/LivekadehTunnel.apk) |
+| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | `x86_64` (64-bit)<br>Windows 10 / 11 / Server | **v1.9.41** (GUI & Hotspot)<br>Wintun L3 VPN + WinDivert Per-App | [⬇️ **Download Portable ZIP**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.41/livekadeh_tunnel-windows-x86_64.zip)<br>[⬇️ **Standalone EXE**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.41/livekadeh_tunnel.exe) |
+| ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | Universal (`arm64` & `x86_64`)<br>macOS 11.0+ (Big Sur+) | **v1.9.21** (Apple `utun`)<br>One-line terminal or DMG package | [⬇️ **Download DMG**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.21/LivekadehTunnel-macOS.dmg) |
+| ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white) | `arm64` (iPhone & iPad)<br>iOS 15.0+ | **v1.9.10** (WebKit Client)<br>Anardoni, Sideloadly, TrollStore | [⬇️ **Download IPA**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/LivekadehTunnel.ipa) |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) | `x86_64` & `aarch64`<br>Ubuntu, Debian, CentOS, Alpine | **v1.9.10** (Kernel TUN)<br>Server & CLI Client in single binary | [⬇️ **Download Tarball**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz) |
+| ![MikroTik](https://img.shields.io/badge/MikroTik_CHR-222222?style=for-the-badge&logo=mikrotik&logoColor=white) | RouterOS v7 Container<br>`x86_64` Architecture | **v1.7.0** (Container Image)<br>Ready for `/container/add` import | [⬇️ **Download TAR Image**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.7.0/livekadeh_tunnel-mikrotik-chr.tar) |
+<!-- DOWNLOAD_TABLE_END -->
 
 ---
 
