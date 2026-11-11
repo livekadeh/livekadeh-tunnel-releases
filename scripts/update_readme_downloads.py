@@ -76,7 +76,7 @@ def main():
 | Platform | Engine & Architecture | Package Details | Direct Download |
 | :---: | :--- | :--- | :--- |
 | ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white) | `arm64-v8a`, `armeabi-v7a`, `x86_64`<br>Android 7.0+ (API 24+) | **v{android_ver}** (Dual Engine)<br>VpnService + WireGuard + Hotspot | [⬇️ **Download APK**]({android_url}) |
-| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | `x86_64` (64-bit)<br>Windows 10 / 11 / Server | **v{windows_ver}** (GUI & Hotspot)<br>Wintun L3 VPN + WinDivert Per-App | [⬇️ **Download Portable ZIP**]({windows_zip_url})<br>[⬇️ **Standalone EXE**]({windows_url}) |
+| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | `x86_64` (64-bit)<br>Windows 10 / 11 / Server | **v{windows_ver}** (Dual Engine & Hotspot)<br>Livekadeh Multipath + WireGuard + Per-App | [⬇️ **Download Portable ZIP**]({windows_zip_url})<br>[⬇️ **Standalone EXE**]({windows_url}) |
 | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | Universal (`arm64` & `x86_64`)<br>macOS 11.0+ (Big Sur+) | **v{macos_ver}** (Apple `utun`)<br>One-line terminal or DMG package | [⬇️ **Download DMG**]({macos_url}) |
 | ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white) | `arm64` (iPhone & iPad)<br>iOS 15.0+ | **v{ios_ver}** (WebKit Client)<br>Anardoni, Sideloadly, TrollStore | [⬇️ **Download IPA**]({ios_url}) |
 | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) | `x86_64` & `aarch64`<br>Ubuntu, Debian, CentOS, Alpine | **v1.9.10** (Kernel TUN)<br>Server & CLI Client in single binary | [⬇️ **Download Tarball**](https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.10/livekadeh_tunnel-linux-x86_64.tar.gz) |
@@ -102,6 +102,11 @@ def main():
     new_readme = re.sub(
         r"releases/download/v[0-9\.]+/LivekadehTunnel\.apk",
         f"releases/download/v{android_ver}/LivekadehTunnel.apk",
+        new_readme
+    )
+    new_readme = re.sub(
+        r"releases/download/v[0-9\.]+/livekadeh_tunnel-windows-x86_64\.zip",
+        f"releases/download/v{windows_ver}/livekadeh_tunnel-windows-x86_64.zip",
         new_readme
     )
 

@@ -6,9 +6,9 @@
     "changelog": "رفع مشکل بازگشت پروفایل وایرگارد به گزینه اول، جداسازی پروفایل فعال هر پروتکل، و تصحیح چیدمان تنظیمات پیشرفته در حالت وایرگارد"
   },
   "windows": {
-    "version": "1.9.47",
-    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.47/livekadeh_tunnel.exe",
-    "changelog": "پشتیبانی کامل از دو موتور Livekadeh Tunnel و WireGuard + وارد کردن فایل‌های کانفیگ .conf + استعلام وضعیت اشتراک وایرگارد از پنل + تفکیک پروفایل فعال هر موتور"
+    "version": "1.9.48",
+    "download_url": "https://github.com/livekadeh/livekadeh-tunnel-releases/releases/download/v1.9.48/livekadeh_tunnel.exe",
+    "changelog": "منوی کشویی یکپارچه Import (فایل، پیست کانفیگ، و خواندن مستقیم تصویر QR) برای هر دو موتور + فعال ماندن کلید Ping هنگام اتصال"
   },
   "ios": {
     "version": "1.9.10",
